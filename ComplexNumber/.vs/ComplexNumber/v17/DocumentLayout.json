@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\GAMETASKS\\ComplexNumber\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96FF3B34-B4EE-4C91-AFD8-3898418B30D5}|ComplexNumber\\ComplexNumber.vcxproj|F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\Complexnum.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{96FF3B34-B4EE-4C91-AFD8-3898418B30D5}|ComplexNumber\\ComplexNumber.vcxproj|solutionrelative:ComplexNumber\\Complexnum.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96FF3B34-B4EE-4C91-AFD8-3898418B30D5}|ComplexNumber\\ComplexNumber.vcxproj|F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\complexfunction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{96FF3B34-B4EE-4C91-AFD8-3898418B30D5}|ComplexNumber\\ComplexNumber.vcxproj|solutionrelative:ComplexNumber\\complexfunction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96FF3B34-B4EE-4C91-AFD8-3898418B30D5}|ComplexNumber\\ComplexNumber.vcxproj|F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\Complexnum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{96FF3B34-B4EE-4C91-AFD8-3898418B30D5}|ComplexNumber\\ComplexNumber.vcxproj|solutionrelative:ComplexNumber\\Complexnum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96FF3B34-B4EE-4C91-AFD8-3898418B30D5}|ComplexNumber\\ComplexNumber.vcxproj|F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\ComplexNumber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{96FF3B34-B4EE-4C91-AFD8-3898418B30D5}|ComplexNumber\\ComplexNumber.vcxproj|solutionrelative:ComplexNumber\\ComplexNumber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Complexnum.h",
+              "DocumentMoniker": "F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\Complexnum.h",
+              "RelativeDocumentMoniker": "ComplexNumber\\Complexnum.h",
+              "ToolTip": "F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\Complexnum.h",
+              "RelativeToolTip": "ComplexNumber\\Complexnum.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-31T08:59:14.94Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "complexfunction.cpp",
+              "DocumentMoniker": "F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\complexfunction.cpp",
+              "RelativeDocumentMoniker": "ComplexNumber\\complexfunction.cpp",
+              "ToolTip": "F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\complexfunction.cpp",
+              "RelativeToolTip": "ComplexNumber\\complexfunction.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-31T10:31:54.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Complexnum.cpp",
+              "DocumentMoniker": "F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\Complexnum.cpp",
+              "RelativeDocumentMoniker": "ComplexNumber\\Complexnum.cpp",
+              "ToolTip": "F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\Complexnum.cpp",
+              "RelativeToolTip": "ComplexNumber\\Complexnum.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-31T09:01:51.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComplexNumber.cpp",
+              "DocumentMoniker": "F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\ComplexNumber.cpp",
+              "RelativeDocumentMoniker": "ComplexNumber\\ComplexNumber.cpp",
+              "ToolTip": "F:\\GAMETASKS\\ComplexNumber\\ComplexNumber\\ComplexNumber.cpp",
+              "RelativeToolTip": "ComplexNumber\\ComplexNumber.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-31T08:54:19.113Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
