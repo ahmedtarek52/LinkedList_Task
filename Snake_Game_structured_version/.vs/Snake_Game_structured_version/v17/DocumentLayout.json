@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\GAMETASKS\\Snake_Game_structured_version\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22551965-08C3-45BE-80DB-677ABF8F8C71}|Snake_Game_structured_version\\Snake_Game_structured_version.vcxproj|F:\\GAMETASKS\\Snake_Game_structured_version\\Snake_Game_structured_version\\Snake_Game_structured_version.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{22551965-08C3-45BE-80DB-677ABF8F8C71}|Snake_Game_structured_version\\Snake_Game_structured_version.vcxproj|solutionrelative:Snake_Game_structured_version\\Snake_Game_structured_version.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22551965-08C3-45BE-80DB-677ABF8F8C71}|Snake_Game_structured_version\\Snake_Game_structured_version.vcxproj|F:\\GAMETASKS\\Snake_Game_structured_version\\Snake_Game_structured_version\\map.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{22551965-08C3-45BE-80DB-677ABF8F8C71}|Snake_Game_structured_version\\Snake_Game_structured_version.vcxproj|solutionrelative:Snake_Game_structured_version\\map.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "map.txt",
+              "DocumentMoniker": "F:\\GAMETASKS\\Snake_Game_structured_version\\Snake_Game_structured_version\\map.txt",
+              "RelativeDocumentMoniker": "Snake_Game_structured_version\\map.txt",
+              "ToolTip": "F:\\GAMETASKS\\Snake_Game_structured_version\\Snake_Game_structured_version\\map.txt",
+              "RelativeToolTip": "Snake_Game_structured_version\\map.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-03T17:33:25.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Snake_Game_structured_version.cpp",
+              "DocumentMoniker": "F:\\GAMETASKS\\Snake_Game_structured_version\\Snake_Game_structured_version\\Snake_Game_structured_version.cpp",
+              "RelativeDocumentMoniker": "Snake_Game_structured_version\\Snake_Game_structured_version.cpp",
+              "ToolTip": "F:\\GAMETASKS\\Snake_Game_structured_version\\Snake_Game_structured_version\\Snake_Game_structured_version.cpp",
+              "RelativeToolTip": "Snake_Game_structured_version\\Snake_Game_structured_version.cpp",
+              "ViewState": "AgIAACUBAAAAAAAAAAAYwC4BAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-03T01:12:51.161Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
