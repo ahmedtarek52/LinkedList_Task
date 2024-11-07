@@ -10,7 +10,7 @@ const int WINDOW_HEIGHT = 600;
 const int GRID_SIZE = 20;
 const int INITIAL_SPEED = 5;
 const int SPEED_INCREMENT = 2;
-const int HEALTH_THRESHOLD = 10;
+const int HEALTH_THRESHOLD = 20;
 enum Direction { Up, Down, Left, Right };
 
 struct SnakeSegment {
@@ -111,16 +111,13 @@ void loadObstaclesFromMap(const std::string& filename) {
 }
 
 
-// Overload for two RectangleShape objects
 bool checkCollision(const sf::RectangleShape& rect1, const sf::RectangleShape& rect2) {
     return rect1.getGlobalBounds().intersects(rect2.getGlobalBounds());
 }
 
-// Overload for a RectangleShape and a CircleShape
 bool checkCollision(const sf::RectangleShape& rect, const sf::CircleShape& circle) {
     return rect.getGlobalBounds().intersects(circle.getGlobalBounds());
 }
-
 
 void resetGame(sf::RenderWindow& window) {
     snake.clear();
@@ -149,23 +146,30 @@ void moveSnake() {
 
 void handleFoodCollision() {
     if (checkCollision(snake[0].shape, food)) {
-        snakeHealth += blueFoodActive ? 3 : 1;
-        INITIAL_HEALTH += blueFoodActive ? 3 : 1;
-        foodCounter += blueFoodActive ? 0 : 1;
+        if (blueFoodActive) {
+            snakeHealth += 1; 
+            speed += SPEED_INCREMENT;
+            foodCounter = 0;  
+        }
+        else {
+            snakeHealth += 1; 
+            foodCounter += 1;
+        }
+        blueFoodActive = foodCounter == 5;  
 
-        blueFoodActive = foodCounter >= 10;
-        if (blueFoodActive) foodCounter = 0;
 
-        if ((snakeHealth == 15 || snakeHealth == 40) && !yellowFoodActive) {
+        if ((snakeHealth %13 ==0) && !yellowFoodActive) {
             yellowFoodActive = true;
             resetFood(yellowFood, sf::Color::Yellow, GRID_SIZE);
         }
 
         sf::Vector2f tailPosition = snake.back().shape.getPosition();
         snake.push_back(SnakeSegment(tailPosition.x, tailPosition.y));
+
         resetFood(food, blueFoodActive ? sf::Color::Blue : sf::Color::Red, blueFoodActive ? GRID_SIZE : GRID_SIZE / 2);
     }
 }
+
 
 void handleYellowFoodCollision() {
     if (yellowFoodActive && checkCollision(snake[0].shape, yellowFood)) {
@@ -213,7 +217,7 @@ void displayEndMessage(sf::RenderWindow& window, const std::string& message) {
 }
 
 void checkGameEndConditions(sf::RenderWindow& window) {
-    if (INITIAL_HEALTH >= 53) {
+    if (snakeHealth == 50) {
         displayEndMessage(window, "Congratulations! You won! Press 'R' to retry.");
         resetGame(window);
     }
@@ -232,17 +236,24 @@ void handleObstacleCollision(sf::RenderWindow& window) {
 
 void handleWallCollision(sf::RenderWindow& window) {
     sf::Vector2f headPosition = snake[0].shape.getPosition();
-    if (headPosition.x < 0 || headPosition.x >= WINDOW_WIDTH || headPosition.y < 0 || headPosition.y >= WINDOW_HEIGHT) {
-        displayEndMessage(window, "Sorry, you lose! Press 'C' to continue or 'R' to retry.");
-        switch (snakeDirection) {
-        case Up:    snakeDirection = Down;   headPosition.y += GRID_SIZE; break;
-        case Down:  snakeDirection = Up;     headPosition.y -= GRID_SIZE; break;
-        case Left:  snakeDirection = Right;  headPosition.x += GRID_SIZE; break;
-        case Right: snakeDirection = Left;   headPosition.x -= GRID_SIZE; break;
-        }
-        snake[0].shape.setPosition(headPosition);
+
+    // Check for wall collisions and wrap the snake to the opposite side
+    if (headPosition.x < 0) { // Left wall
+        headPosition.x = WINDOW_WIDTH - GRID_SIZE;
     }
+    else if (headPosition.x >= WINDOW_WIDTH) { // Right wall
+        headPosition.x = 0;
+    }
+
+    if (headPosition.y < 0) { // Top wall
+        headPosition.y = WINDOW_HEIGHT - GRID_SIZE;
+    }
+    else if (headPosition.y >= WINDOW_HEIGHT) { // Bottom wall
+        headPosition.y = 0;
+    }
+    snake[0].shape.setPosition(headPosition);
 }
+
 int main() {
     srand(static_cast<unsigned>(time(0)));
     sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Snake Game with Obstacles");
@@ -254,7 +265,6 @@ int main() {
         return -1;
     }
 
-    // Setup text for speed and score
     speedText.setFont(font);
     speedText.setCharacterSize(24);
     speedText.setFillColor(sf::Color::White);
